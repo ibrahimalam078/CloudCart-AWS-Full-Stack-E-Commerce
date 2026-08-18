@@ -1,0 +1,7 @@
+{
+  "entries": [
+    { "path": "C:\\Users\\mdzay\\.aws\\agent-toolkit-for-aws\\plugins\\aws-core\\skills" },
+    { "path": "C:\\Users\\mdzay\\.aws\\agent-toolkit-for-aws\\plugins\\aws-agents\\skills" },
+    { "path": "C:\\Users\\mdzay\\.aws\\agent-toolkit-for-aws\\plugins\\aws-data-analytics\\skills" }
+  ]
+}

@@ -1,0 +1,167 @@
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.admin-quick-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.stat-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.icon-revenue { background: #e0e7ff; color: #4338ca; }
+.icon-orders { background: #e0f2fe; color: #0284c7; }
+.icon-products { background: #fef3c7; color: #d97706; }
+.icon-users { background: #dcfce7; color: #15803d; }
+.icon-pending { background: #fff7ed; color: #ea580c; }
+.icon-lowstock { background: #fef2f2; color: #dc2626; }
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-top: 0.2rem;
+}
+
+.status-counts-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.status-count-box {
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.status-count-box.warning { background: var(--warning-light); color: #92400e; }
+.status-count-box.primary { background: var(--primary-light); color: var(--primary); }
+.status-count-box.success { background: var(--success-light); color: #065f46; }
+.status-count-box.danger { background: var(--danger-light); color: #991b1b; }
+
+.count-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.count-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.admin-table-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+}
+
+.admin-table-thumb.lg {
+  width: 80px;
+  height: 80px;
+}
+
+.admin-actions-cell {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.image-upload-box {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  background: #f8fafc;
+  transition: var(--transition);
+}
+
+.image-upload-box:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.upload-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.upload-icon {
+  color: var(--primary);
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.upload-preview-img {
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+
+.status-select-sm {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .status-counts-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .admin-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
